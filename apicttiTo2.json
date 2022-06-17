@@ -1,0 +1,64 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/api/report/reportOne": {
+            "get": {
+                "operationId": "getReportOne",
+                "summary": "Get first report",
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "First report built",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "report"
+                ]
+            }
+        },
+        "/api/report/reportTwo": {
+            "get": {
+                "operationId": "getReportTwo",
+                "summary": "Get second report",
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": "Second report built",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                },
+                "tags": [
+                    "report"
+                ]
+            }
+        }
+    },
+    "info": {
+        "title": "CTTI Reports API",
+        "description": "CTTI api for reports endpoints",
+        "version": "1.0",
+        "contact": {}
+    },
+    "tags": [],
+    "servers": [
+        {
+            "url": "http://ctti-api-gobierno-db-2-git-ctti-gobierno.clusterdemotaxo-adb4287ef2360ed6d0be34c85d7d9048-0000.eu-de.containers.appdomain.cloud/"
+        }
+    ],
+    "components": {
+        "schemas": {}
+    }
+}
